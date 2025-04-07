@@ -1,31 +1,210 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Festival de Films de Plein Air à Paris - Thème : Le Voyage">
-    <meta name="keywords" content="festival cinéma, plein air, Paris, voyage, films d'auteur">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival Plein Air - Accueil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Festival de Films en Plein Air">
+  <meta property="og:title" content="Festival Plein Air Paris">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="images/01-films.jpg">
+  <meta property="og:description" content="Rejoignez-nous pour trois soirées magiques de cinéma en plein air à Paris">
+
+  <title>Festival Plein Air - Accueil</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/stylescss.css">
+  <link rel="stylesheet" href="webfonts/all.css">
 </head>
-<body>
-    <header>
-        <h1>Festival des Films de Plein Air</h1>
-        <p>Parc Monceau, 5-7 Août — Thème : Le Voyage</p>
-    </header>
-    <nav>
+<body data-spy="scroll" data-target="#booking">
+
+<!-- Header / Navigation -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark maNav">
+  <a class="navbar-brand" href="#">
+    <img src="images/logo.jpg" width="100" alt="Logo Festival">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link active" href="#">Accueil</a>
+      <a class="nav-item nav-link" href="films.html">Films</a>
+      <a class="nav-item nav-link" href="#booking">Réservation</a>
+      <a class="nav-item nav-link" href="blog.html">Actualités</a>
+      <a class="nav-item nav-link" href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Cookie modal -->
+<div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
+  <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+  <button type="button" class="btn btn-success btn-sm" data-dismiss="alert">J'accepte</button>
+  <button type="button" class="btn btn-danger btn-sm" data-dismiss="alert">Je refuse</button>
+  <button type="button" class="close" data-dismiss="alert">
+    <span>&times;</span>
+  </button>
+</div>
+
+<!-- Section Accueil -->
+<section class="container-fluid welcome">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-6"></aside>
+      <article class="col-lg-6">
+        <p>-Festival-</p>
+        <div class="date">
+          <span>-AoûT-</span><span class="textshadow">2025</span><span>-10ème édition-</span>
+        </div>
+        <p>-Trois nuits de magie cinématographique sous les étoiles-</p>
+        <a href="films.html" class="btn btn-custom">Voir le programme</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section À propos -->
+<section class="container-fluid about">
+  <div class="container">
+    <div class="row">
+      <article class="col-lg-6">
+        <h2 id="about">Qui sommes-nous ?</h2>
+        <p>Depuis 2015, notre festival propose une sélection unique de films d'auteur, comédies et drames internationaux. Dans une ambiance conviviale, les projections se déroulent sous les étoiles dans le magnifique Parc Monceau.</p>
+        <a href="#booking" class="btn btn-custom">Je réserve !</a>
+      </article>
+      <aside class="col-lg-6 order-first order-lg-2"></aside>
+    </div>
+  </div>
+</section>
+
+<!-- Section Actualités -->
+<section class="container-fluid news">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-6"></aside>
+      <article class="col-lg-6">
+        <h2 id="news">Dernières nouvelles</h2>
+        <p>Cette année, de nouveaux courts-métrages seront présentés chaque soir en avant-programme. <a href="blog.html">Découvrez-les ici</a>.</p>
+        <a href="rendez-vous-le-05-aout.html" class="btn btn-custom">Lire la suite</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section Films -->
+<section class="container-fluid movie">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"><h2 id="movie">Nos Films</h2></div>
+      <!-- Exemple d'affiche -->
+      <div class="col-sm-4 col-md-3 col-lg-2">
+        <a href="films.html#01film"><img src="images/01-films.jpg" class="img-fluid" alt="film"></a>
+      </div>
+      <!-- Répéter jusqu'à 12 films -->
+    </div>
+  </div>
+</section>
+
+<!-- Section Réservation -->
+<section class="container-fluid booking">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-6"></aside>
+      <article class="col-lg-6">
+        <h2 id="booking">Réservez votre place</h2>
+        <form class="needs-validation" novalidate id="bookingValidation">
+          <div class="form-group">
+            <label for="nom">Prénom Nom</label>
+            <input class="form-control" required type="text" name="nom" id="nom">
+            <div class="invalid-tooltip">Veuillez entrer votre nom complet.</div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input class="form-control" required type="email" name="email" id="email">
+            <div class="invalid-tooltip">Adresse email invalide.</div>
+          </div>
+          <div class="form-group">
+            <label for="seance">Séance</label>
+            <select class="form-control" name="seance" id="seance" required>
+              <option value="" selected disabled>Sélectionnez une séance</option>
+              <option value="1">5 AoûT - 21h</option>
+              <option value="2">6 AoûT - 21h</option>
+              <option value="3">7 AoûT - 21h</option>
+            </select>
+            <div class="invalid-tooltip">Merci de choisir une séance.</div>
+          </div>
+          <button type="submit" class="btn btn-custom">Je réserve !</button>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contact -->
+<section class="container-fluid contact">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-6">
+        <iframe src="images/Carte.jpg" frameborder="0" allowfullscreen></iframe>
+      </aside>
+      <article class="col-lg-6">
+        <h2 id="contact">Contact</h2>
+        <form class="needs-validation" novalidate id="contactValidation">
+          <div class="form-group">
+            <label for="sujet">Sujet</label>
+            <input class="form-control" required type="text" id="sujet">
+            <div class="invalid-tooltip">Champ obligatoire.</div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" required id="message" rows="5"></textarea>
+            <div class="invalid-tooltip">Merci d'écrire votre message.</div>
+          </div>
+          <button type="submit" class="btn btn-custom">Envoyer</button>
+        </form>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid footer">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Liens utiles</h2>
         <a href="index.html">Accueil</a>
         <a href="films.html">Films</a>
-        <a href="actualites.html">Actualités</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
-    </nav>
-    <main>
-        <section>
-            <h2>Bienvenue</h2>
-            <p>Rejoignez-nous pour 3 soirées magiques de cinéma en plein air au cœur de Paris!</p>
-            <p><strong>Date:</strong> 5-7 Août | <strong>Lieu:</strong> Parc Monceau</p>
-            <p><strong>Thème:</strong> Le Voyage – Un voyage cinématographique à travers le monde, des paysages époustouflants et des histoires inoubliables.</p>
-            <p>Ne manquez pas nos projections exceptionnelles sous les étoiles, avec des films venant de tous les horizons, du drame au documentaire, de l'animation à la fiction!</p>
-        </section>
-    </main>
-    
+      </div>
+      <div class="col-md-4">
+        <h2>Adresse</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Parc Monceau, Paris</p>
+        <p><i class="fas fa-envelope"></i> contact@festivalpleinair.fr</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Suivez-nous</h2>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="socketBkg">
+    <div class="socket text-center">
+      <p>&copy; 2025 Festival Plein Air - Université Côte d'Azur</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button onclick="topFunction()" id="myBtn" title="Retour haut"><i class="fas fa-chevron-up"></i></button>
+
+<!-- Scripts JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
