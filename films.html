@@ -3,211 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Films – Festival Plein Air</title>
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700" rel="stylesheet">
-
-  <!-- CSS -->
+  <meta name="description" content="Découvrez les films du Festival Plein Air à Paris - Sélection spéciale de 12 films internationaux !">
+  <title>Films – Festival Plein Air</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/stylescss.css">
   <link rel="stylesheet" href="webfonts/all.css">
 </head>
-
 <body>
 
 <!-- Header -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark maNav">
+<nav class="navbar navbar-expand-lg navbar-dark maNav">
   <a class="navbar-brand" href="index.html">
-    <img src="images/logo.jpg" width="100" alt="Logo Festival" />
+    <img src="images/logo.jpg" width="100" alt="Logo Festival"/>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link" href="index.html">Accueil</a>
-      <a class="nav-item nav-link active" href="#">Les Films</a>
-      <a class="nav-item nav-link" href="index.html#booking">Réservation</a>
-      <a class="nav-item nav-link" href="blog.html">Actualités</a>
-      <a class="nav-item nav-link" href="contact.html">Contact</a>
-    </div>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+      <li class="nav-item active"><a class="nav-link" href="films.html">Films</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Actualités</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
-<!-- Films Section -->
-<section class="container my-5">
-  <h2 class="text-center mb-5">🎬 Films au programme</h2>
+<!-- Section Films -->
+<section class="container movie mt-5">
+  <h2 class="text-center mb-5">Notre sélection de films</h2>
   <div class="row">
-
-    <!-- Boucle pour les 12 films -->
-    <!-- Tu peux modifier les titres et descriptions comme tu veux -->
-    <!-- Format : image/titre/date/lieu/description/étoiles -->
-
-    <!-- Film 01 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
+    <!-- Film cards loop -->
+    <!-- Répéter ce bloc pour chaque film -->
+    <!-- Démo pour 12 films -->
+    <!-- Vous pouvez remplacer les titres/synopsis/images -->
+    <!-- FILM 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+      <div class="card h-100">
         <img src="images/01-films.jpg" class="card-img-top" alt="Film 1">
         <div class="card-body">
-          <h5 class="card-title">Minecraft – Le Film</h5>
-          <p class="text-muted">8 avril • Parc des Festivals</p>
-          <p>Une aventure carrée pleine de surprises dans l'univers de Minecraft.</p>
-          <p>⭐⭐⭐⭐☆</p>
+          <h5 class="card-title">Titre du Film 1</h5>
+          <p class="card-text">Un film inspirant sur le courage et l'amitié.</p>
         </div>
       </div>
     </div>
-
-    <!-- Film 02 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/02-films.jpg" class="card-img-top" alt="Film 2">
-        <div class="card-body">
-          <h5 class="card-title">La Grande Évasion</h5>
-          <p class="text-muted">9 avril • Jardin Méditerranée</p>
-          <p>Une comédie d'action autour d'une évasion hilarante et imprévisible.</p>
-          <p>⭐⭐⭐☆☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 03 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/03-films.jpg" class="card-img-top" alt="Film 3">
-        <div class="card-body">
-          <h5 class="card-title">Le Voyage de Lumière</h5>
-          <p class="text-muted">10 avril • Ciné Plage</p>
-          <p>Un conte poétique sur une jeune fille guidée par les étoiles.</p>
-          <p>⭐⭐⭐⭐⭐</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 04 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/04-films.jpg" class="card-img-top" alt="Film 4">
-        <div class="card-body">
-          <h5 class="card-title">Jungle Mystère</h5>
-          <p class="text-muted">10 avril • Forêt Claire</p>
-          <p>Exploration, danger et humour dans une jungle mystérieuse.</p>
-          <p>⭐⭐⭐⭐☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 05 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/05-films.jpg" class="card-img-top" alt="Film 5">
-        <div class="card-body">
-          <h5 class="card-title">Amour & Robots</h5>
-          <p class="text-muted">11 avril • Parc Lumière</p>
-          <p>Quand une intelligence artificielle découvre les émotions humaines…</p>
-          <p>⭐⭐⭐⭐⭐</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 06 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/06-films.jpg" class="card-img-top" alt="Film 6">
-        <div class="card-body">
-          <h5 class="card-title">Les Rêves en Couleurs</h5>
-          <p class="text-muted">11 avril • Terrasse Marine</p>
-          <p>Un film d’animation haut en couleur pour petits et grands.</p>
-          <p>⭐⭐⭐☆☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 07 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/07-films.jpg" class="card-img-top" alt="Film 7">
-        <div class="card-body">
-          <h5 class="card-title">Le Silence du Vent</h5>
-          <p class="text-muted">12 avril • Plage Côté Sud</p>
-          <p>Un drame puissant sur la solitude et le lien humain.</p>
-          <p>⭐⭐⭐⭐☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 08 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/08-films.jpg" class="card-img-top" alt="Film 8">
-        <div class="card-body">
-          <h5 class="card-title">Une Nuit à Tokyo</h5>
-          <p class="text-muted">12 avril • Terrasse Lumière</p>
-          <p>Thriller visuel sous les néons japonais et musiques électro.</p>
-          <p>⭐⭐⭐⭐☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 09 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/09-films.jpg" class="card-img-top" alt="Film 9">
-        <div class="card-body">
-          <h5 class="card-title">Retour au Far West</h5>
-          <p class="text-muted">13 avril • Ciné Prairie</p>
-          <p>Duels, cowboys et humour : un western pour toute la famille !</p>
-          <p>⭐⭐⭐☆☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 10 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/10-films.webp" class="card-img-top" alt="Film 10">
-        <div class="card-body">
-          <h5 class="card-title">Tempête Solaire</h5>
-          <p class="text-muted">13 avril • Parc Estival</p>
-          <p>Science-fiction et survie sous une explosion cosmique.</p>
-          <p>⭐⭐⭐⭐☆</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 11 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/11-films.webp" class="card-img-top" alt="Film 11">
-        <div class="card-body">
-          <h5 class="card-title">Le Mystère du Train Bleu</h5>
-          <p class="text-muted">14 avril • Gare en Plein Air</p>
-          <p>Un polar élégant et rythmé dans l’ambiance d’un vieux train.</p>
-          <p>⭐⭐⭐⭐⭐</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Film 12 -->
-    <div class="col-md-6 col-lg-4 mb-4">
-      <div class="card h-100 shadow-sm">
-        <img src="images/12-films.jpg" class="card-img-top" alt="Film 12">
-        <div class="card-body">
-          <h5 class="card-title">Chiens vs Chats</h5>
-          <p class="text-muted">14 avril • Place Centrale</p>
-          <p>Des agents secrets poilus s’affrontent dans une guerre hilarante.</p>
-          <p>⭐⭐⭐☆☆</p>
-        </div>
-      </div>
-    </div>
-
+    <!-- FILM 2 à 12 ... copier le bloc ci-dessus et adapter -->
+    <!-- ... -->
   </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<!-- Footer -->
+<footer class="container-fluid footer">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Navigation</h2>
+        <a href="index.html">Accueil</a>
+        <a href="films.html">Films</a>
+        <a href="blog.html">Actualités</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="col-md-3">
+        <h2>Adresse</h2>
+        <p><i class="fas fa-map-marker-alt"></i> 10 Rue du Cinéma, Paris</p>
+        <p><i class="fas fa-envelope"></i> contact@festivalcinema.fr</p>
+      </div>
+      <div class="col-md-3">
+        <h2>Partenaires</h2>
+        <ul>
+          <li>CinéFrance</li>
+          <li>Institut Lumière</li>
+          <li>Ville de Paris</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Suivez-nous</h2>
+        <div class="socialicons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="socketBkg text-center py-3">
+    <p>© 2025 Festival Plein Air - Tous droits réservés.</p>
+  </div>
+</footer>
 
+<!-- Scripts JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
+
 
