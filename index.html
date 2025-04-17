@@ -205,55 +205,56 @@
       </div>
     </div>
   </section>
-  <!-- Section Contactez-nous (extrait de contact.html) -->
-<section class="container-fluid contactPage" id="contact">
-    <div class="container py-5">
+  <section class="container-fluid contactPage py-5" style="background-color: #1f2d3d; color: white;">
+    <div class="container">
       <div class="row">
-        <!-- Contact Form -->
-        <div class="col-md-6">
-          <div class="card bg-light cardForm">
-            <div class="card-body">
-              <h2>Contactez-nous !</h2>
-              <p>Envoyez-nous un message via le formulaire ci-dessous :</p>
-              <form class="needs-validation" novalidate id="contactValidationHome">
-                <div class="form-group">
-                  <label for="nomIndex">Prénom Nom</label>
-                  <input class="form-control" type="text" id="nomIndex" required placeholder="Jean Dupont">
-                  <div class="invalid-tooltip">Merci d’entrer votre nom complet.</div>
-                </div>
-                <div class="form-group">
-                  <label for="mailIndex">E-mail</label>
-                  <input class="form-control" type="email" id="mailIndex" required placeholder="exemple@mail.fr">
-                  <div class="invalid-tooltip">Merci d’entrer un e-mail valide.</div>
-                </div>
-                <div class="form-group">
-                  <label for="sujetIndex">Sujet</label>
-                  <input class="form-control" type="text" id="sujetIndex" required placeholder="Sujet">
-                  <div class="invalid-tooltip">Merci de préciser un sujet.</div>
-                </div>
-                <div class="form-group">
-                  <label for="messageIndex">Message</label>
-                  <textarea class="form-control" id="messageIndex" rows="5" required placeholder="Votre message..."></textarea>
-                  <div class="invalid-tooltip">Merci de rédiger un message.</div>
-                </div>
-                <button type="submit" class="btn btn-custom">Envoyer</button>
-              </form>
-            </div>
-          </div>
+  
+        <!-- Col gauche : Carte -->
+        <div class="col-md-6 mb-4">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.689505764887!2d2.3072426!3d48.8793804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc51893e161%3A0x656e12144d205cbd!2sParc%20Monceau!5e0!3m2!1sfr!2sfr!4v1713074200000" 
+            width="100%" 
+            height="350" 
+            frameborder="0" 
+            style="border:0; border-radius: 8px;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
   
-        <!-- Contact Info -->
-        <div class="col-md-6 address">
-          <h2>D'autres moyens de nous contacter</h2>
-          <div class="contactIcons mb-3">
-            <p><i class="fas fa-home pr-2"></i> Parc Monceau, Paris</p>
-            <p><i class="fas fa-envelope pr-2"></i> contact@zhangjiewa@gmail.com</p>
-            <p><i class="fas fa-phone pr-2"></i> +33 6 10 89 56 23</p>
-          </div>
+        <!-- Col droite : Formulaire -->
+        <div class="col-md-6">
+          <h2>CONTACTEZ–NOUS</h2>
+          <p>Envoyez-nous un message via le formulaire ci-dessous :</p>
+          <form class="needs-validation" novalidate id="contactValidation">
+            <div class="form-group">
+              <label for="nom">Prénom Nom</label>
+              <input class="form-control" type="text" name="nom" id="nom" required placeholder="Jean Dupont"
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="mail">E-mail</label>
+              <input class="form-control" type="email" name="mail" id="mail" required placeholder="exemple@mail.fr"
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <input class="form-control" type="text" name="sujet" id="sujet" required placeholder="Sujet"
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea class="form-control" name="message" id="message" rows="4" required placeholder="Composez votre texte !"
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom mt-2">ENVOYER</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
+  
   
   <footer style="background-color: #2c3e50; color: white; padding: 40px 0;">
     <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
