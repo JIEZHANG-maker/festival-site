@@ -170,21 +170,58 @@
   </div>
 </section>
 <!-- Section Réservation -->
-<section class="container-fluid booking" id="booking">
+<!-- Section Réservation -->
+<section class="container-fluid booking py-5" style="background-color: #1f2d3d; color: white;">
     <div class="container">
       <div class="row">
-        <aside class="col-lg-6">
-          <img src="images/hero.webp" alt="Réservation festival" class="img-fluid">
-        </aside>
-        <article class="col-lg-6">
-          <h2>Réservez votre place</h2>
+  
+        <!-- Image à gauche -->
+        <div class="col-md-6 mb-4">
+          <img src="images/cinema.jpg" alt="Cinéma Réservation" class="img-fluid rounded shadow">
+        </div>
+  
+        <!-- Formulaire à droite -->
+        <div class="col-md-6">
+          <h2 class="mb-4" style="color: #f9b233;">RÉSERVATION EN LIGNE</h2>
           <form class="needs-validation" novalidate id="bookingValidation">
-            ...
+            <div class="form-group">
+              <label for="nom">Prénom Nom</label>
+              <input class="form-control" type="text" name="nom" id="nom" required
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input class="form-control" type="email" name="email" id="email" required
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone</label>
+              <input class="form-control" type="tel" name="telephone" id="telephone" required
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="places">Nb. places</label>
+              <input class="form-control" type="number" name="places" id="places" min="1" max="10" required
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+            </div>
+            <div class="form-group">
+              <label for="seance">Séances</label>
+              <select class="form-control" name="seance" id="seance" required
+                style="background-color: #2c3e50; color: white; border: 1px solid #555;">
+                <option value="" disabled selected>Ma Séance</option>
+                <option value="1">5 août - 21h</option>
+                <option value="2">6 août - 21h</option>
+                <option value="3">7 août - 21h</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-custom mt-3">JE RÉSERVE !</button>
           </form>
-        </article>
+        </div>
+  
       </div>
     </div>
   </section>
+  
   
     </div>
   <!-- Nous contact -->
