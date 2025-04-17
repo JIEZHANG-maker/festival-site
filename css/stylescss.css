@@ -171,4 +171,21 @@ body {
     padding: 20px;
     border-radius: 10px;
   }
+  /* Hero Title Gold Style */
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffe8b2; /* #ffe8b2 */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #ffe8b2; /* #ffe8b2 */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-text strong {
+    color: #ffe8b2;
+  }
   
